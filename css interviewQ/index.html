@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Css interview Questions</h2>
+
+    <h3>Q.1 Difference between flex row and column </h3>
+         <p> Ans: in flex ,the first property flex-direction: row means the all elements put in row ,
+            and flex-direction:column means all elements put in column 
+
+         </p>
+         flex-direction:row <div style="background-color:yellow ; height:20px;width:200px ;display: flex; flex-direction: row; gap: 10px;" > <div> hello</div> <div>hello</div> <div>hello</div> </div>
+         flex-direction:column <div style="background-color:yellow ; height:60px;width:200px ;display: flex; flex-direction: column;" > <div> hello</div> <div>hello</div> <div>hello</div> </div>
+    <h3>Q.2 Explain inline , internal and external stylesheet </h3>
+         <p> Ans:1. Inline CSS  means in which the CSS property is kept in the body section attached with
+        element on which we have to apply styling.
+        <br> <pre> Ex. < div style =" color: red" >  the text is in red color  <  /div></pre>  <br>
+        
+        2.  An internal CSS is defined in the head section of an HTML page,
+            within a style element  
+            <br> <pre>  Ex. in    < head>  <  style>   div {color: red    }    < / style >   < / head>  </pre>  
+             3. : In External CSS we actually write style code in some other file named .CSS and
+            after that we attach that file using the link tag in the head. <br>
+          <pre>   EX. < link rel="stylesheet" href="style.css"> </pre>
+         </p>
+
+    <h3>Q.3   Justify-content allows you to do what?</h3>
+       <p> Ans: Justify-content is a property of flex and grid to used for how elements put ,they contain three values 
+        first is space-between means space in between in elements and second is space-evenly means the space evenly for each elements
+        third is space-around means same space around each elements. </p>
+
+"
+ex. space-between : <div style="background-color:yellow ; height:20px;width:200px ;display: flex; justify-content: space-between;" > <div> hello</div> <div>hello</div> <div>hello</div> </div>
+   space evenly:<div style="background-color:yellow ; height:20px;width:200px ;display: flex; justify-content: space-evenly;" > <div> hello</div> <div>hello</div> <div>hello</div> </div>
+    space-around:<div style="background-color:yellow ; height:20px;width:200px ;display: flex; justify-content: space-around;" > <div> hello</div> <div>hello</div> <div>hello</div> </div>
+   
+   
+   
+    <h3>Q.4  Difference between absolute and relative positioning </h3>
+
+ <p> Ans: in absolute positioning its position accroding to its parent element or with respect to browser outlines
+   <br> <br> ex. when I add left:30px the element will shift 30 px from the browsers outline or with respect to parrent  position to its right.
+   When you always give value, the shift will happen in the opposite value <br> <br>
+    : An element with position: relative; it will behave exactly like static until you write some
+more properties in it <br>
+Ex. 
+when I add left:30px the element will shift 30 px from the original position to its right.
+When you always give value, the shift will happen in the opposite value
+  </p> 
+ 
+
+
+
+    <h3>Q.5 What is grid-template-columns used for? </h3>
+ <p> Ans: grid template column property specifies the number of columns in a grid layout. the value are space separeted list ,each value specifies 
+    the size of the respective column.
+ </p><br>
+ Ex. grid-template-column: 1fr 1fr 1fr 1fr <div  style=" height:200px;width:200px; border:1px solid green ;display:grid;grid-template-row:1fr 1fr 1fr ; grid-template-column:1fr 1fr 1fr; grid-gap:5px" > 
+   <div style="border:1px solid red ;grid-row:1/4 ">hellow </div> <div style="border:1px solid red;grid-row:1/4"  >  hellow</div>  <div style="border:1px solid red ;grid-row:1/4" >hellow</div> <div  style="border:1px solid red ;grid-row:1/4"  >hellow</div></div>
+
+    <h3>Q.6 What is the z-index in CSS? </h3>
+ <p> Ans: An element with greater stack order is always in front of an element with a lower stack order.
+    z-index property will not work if the position is static. The z-index property specifies the stack order of an element </p>
+     <br><br>Ex. z-index of red box is -1
+     <div style=" height:100px;width:200px; border:1px solid green" ><h3>how are you ,where are you</h3>
+                <div  style="width:50px ;height:50px;background-color:red  ;position:absolute; top:1400px;left:40px ;z-index:-1" ></div>
+               </div>
+
+    <h3> Q.7  What is the difference between padding and margin?</h3>
+ <p> Ans:padding makes space between content and border,padding increases size of box.margin make space between other elements outside the border ,margin do not increase box size.</p>
+<br><br>
+       Ex. padding-  means space in between content and border<div style=" height:100px;width:100px; border:1px solid green ; padding:10px">  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, </div><br>
+       Ex. margin -means space outside the border.
+       <div style=" height:100px;width:100px; border:1px solid green" > <div style=" height:30px; width:50px; border:1px solid red ;margin:10px"> hellow</div> <div style=" height:30px; width:50px; border:1px solid red;margin: 10px;" > hellow</div></div>
+
+<br>
+    <h3>Q.8  What is box sizing?</h3>
+    <p> Ans: in box sizing contains two properties ,first border box: the height and width of box is fix after giving padding and border the actual height and width same
+        <br> <br> .ex: width + padding + border = actual width of an element
+        height + padding + border = actual height of an element <br> <br>content box : the height and width of box is increase with padding and border </p>
+
+
+    <h3> Q.9  What is animation delay?</h3>
+ <p> Ans:  this property specifies  delay for the start of an animation ,negative valuue can also add.</p>
+
+    <h3>Q.10  Which property you will use to merge cells vertically in grid?</h3>
+ <p> Ans:  grid-row-start: and grid-row-end</p> <br> Ex. grid-row:1/4
+      <div  style=" height:200px;width:200px; border:1px solid green ;display:grid;grid-template-row:1fr 1fr 1fr ; grid-template-column:1fr 1fr 1fr; grid-gap:5px" > 
+          <div style="border:1px solid red ;grid-row:1/4  ">hellow </div> <div style="border:1px solid red;grid-row:2/4;grid-column:2/4"  >  hellow</div>  <div style="border:1px solid red" >hellow</div> <div  style="border:1px solid red"  >hellow</div></div>
+     
+
+    <h3>Q.11 Which property you will use to merge cells horizontally in grid?</h3>
+ <p> Ans:  grid-column-start: and grid-column- end:</p><br> Ex. grid-column:1/4
+ <div  style=" height:200px;width:200px; border:1px solid green ;display:grid;grid-template-row:1fr 1fr 1fr ; grid-template-column:1fr 1fr 1fr; grid-gap:5px" > 
+   <div style="border:1px solid red ; ">hellow </div> <div style="border:1px solid red;grid-column:1/4"  >  hellow</div>  <div style="border:1px solid red" >hellow</div> <div  style="border:1px solid red"  >hellow</div></div>
+    <h3>Q.12  Explain CSS box model</h3>
+ <p> Ans: the css box model is essentially a box that wraps around every html elements .it consists of :margins,border,padding, and the actual content.</p>
+<br>  Ex.  <img src="./box model.jpg" alt="">
+    <h3> Q.13 what is the difference between display none and visibility hidden?</h3>
+    <p> Ans:  display:none means the element will completely removed,
+           visibility:hidden means it is not visible but it will take the space .
+    </p>
+
+</body>
+</html>
